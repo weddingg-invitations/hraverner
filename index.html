@@ -48,6 +48,7 @@
   <script nomodule="" src="js/tilda-polyfill-1.0.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/timer.css">
+    
   <script
     type="text/javascript">function t_onReady(func) {
         if (document.readyState != 'loading') {
@@ -644,7 +645,8 @@
       <div class="t485">
         <div class="t-container t-align_center">
           <div class="t-col t-col_8 t-prefix_2">
-            <div class="t485__uptitle t-uptitle t-uptitle_md t-margin_auto restoran_title"  field="subtitle">Lianna Garden Hall</div>
+            <div class="t485__uptitle t-uptitle t-uptitle_md t-margin_auto restoran_title" field="subtitle">Lianna
+              Garden Hall</div>
             <img class="t485__img t-img t-margin_auto" src="images/Divn.jpg"
               data-original="https://instagram.fevn7-1.fna.fbcdn.net/v/t39.30808-6/367700677_279638764695875_5264324425081761495_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&_nc_ht=instagram.fevn7-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=P3fDflF6Gd8Q7kNvgEzqL_8&edm=ANTKIIoAAAAA&ccb=7-5&oh=00_AYC-FyFdohHLuoFq9bLXjhG1k-Z1LoqoSvNfRwGnfrvnaw&oe=66529B47&_nc_sid=cf751b"
               imgfield="img" style="" alt="">
@@ -732,6 +734,16 @@
     </div>
   </div>
   <script type="text/javascript" src="js/timer.js"></script>
+    <!-- audio  -->
+    <audio id="music">
+      <source src="relax.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById("music").play();
+      }, 100);
+    </script>
 </body>
 
 </html>

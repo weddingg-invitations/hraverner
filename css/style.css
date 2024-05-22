@@ -12,26 +12,27 @@ body {
 
 @keyframes anime {
     0% {
-        box-shadow: 0 0 0 #fe9f39;
-        filter: drop-shadow(0 0 0px #ff8300);
+        box-shadow: 0 0 0 transparent;
+        filter: drop-shadow(0 0 0 transparent);
     }
 
     50% {
-        box-shadow: 0 0 20px #ff8300;
-        filter: drop-shadow(0 0 20px #ff8300);
+        box-shadow: 0 0 20px #ffb35d;
+        filter: drop-shadow(0 0 10px #ffb35d);
     }
 
     0% {
-        box-shadow: 0 0 0 #fe9f39;
-        filter: drop-shadow(0 0 0px #ff8300);
+        box-shadow: 0 0 0 transparent;
+        filter: drop-shadow(0 0 0 transparent);
     }
 }
 
 #rec610154679 .tn-elem[data-elem-id="1687436199612"] .tn-atom {
     background: transparent !important;
 }
+
 #topBG {
-    background: linear-gradient(0.91turn, #282828 12%, rgba(1, 1, 1, 1) 98%);
+    background: linear-gradient(0.91turn, #000000 12%, rgb(32 92 144) 98%)
 }
 
 #img-text {
@@ -83,9 +84,11 @@ iframe {
     color: white;
     min-width: 320px;
 }
-#name2{
+
+#name2 {
     color: #c17a2e !important;
 }
-.restoran_title{
+
+.restoran_title {
     font-size: 26px;
 }
