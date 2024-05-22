@@ -48,24 +48,24 @@
   <script nomodule="" src="js/tilda-polyfill-1.0.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/timer.css">
-    
-  <script
-    type="text/javascript">function t_onReady(func) {
-        if (document.readyState != 'loading') {
-          func();
-        } else {
-          document.addEventListener('DOMContentLoaded', func);
-        }
+
+  <script type="text/javascript">function t_onReady(func) {
+      if (document.readyState != 'loading') {
+        func();
+      } else {
+        document.addEventListener('DOMContentLoaded', func);
       }
-      function t_onFuncLoad(funcName, okFunc, time) {
-        if (typeof window[funcName] === 'function') {
-          okFunc();
-        } else {
-          setTimeout(function () {
-            t_onFuncLoad(funcName, okFunc, time);
-          }, (time || 100));
-        }
-      } function t_throttle(fn, threshhold, scope) { return function () { fn.apply(scope || this, arguments); }; } function t396_initialScale(t) { var e = document.getElementById("rec" + t); if (e) { var r = e.querySelector(".t396__artboard"); if (r) { var a, i = document.documentElement.clientWidth, l = [], d = r.getAttribute("data-artboard-screens"); if (d) { d = d.split(","); for (var o = 0; o < d.length; o++)l[o] = parseInt(d[o], 10) } else l = [320, 480, 640, 960, 1200]; for (o = 0; o < l.length; o++) { var n = l[o]; n <= i && (a = n) } var g = "edit" === window.allrecords.getAttribute("data-tilda-mode"), u = "center" === t396_getFieldValue(r, "valign", a, l), c = "grid" === t396_getFieldValue(r, "upscale", a, l), t = t396_getFieldValue(r, "height_vh", a, l), f = t396_getFieldValue(r, "height", a, l), e = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(" OPR/"); if (!g && u && !c && !t && f && !e) { for (var s = parseFloat((i / a).toFixed(3)), _ = [r, r.querySelector(".t396__carrier"), r.querySelector(".t396__filter")], o = 0; o < _.length; o++)_[o].style.height = parseInt(f, 10) * s + "px"; for (var h = r.querySelectorAll(".t396__elem"), o = 0; o < h.length; o++)h[o].style.zoom = s } } } } function t396_getFieldValue(t, e, r, a) { var i = a[a.length - 1], l = r === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + r); if (!l) for (var d = 0; d < a.length; d++) { var o = a[d]; if (!(o <= r) && (l = o === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + o))) break } return l }</script>
+    }
+    function t_onFuncLoad(funcName, okFunc, time) {
+      if (typeof window[funcName] === 'function') {
+        okFunc();
+      } else {
+        setTimeout(function () {
+          t_onFuncLoad(funcName, okFunc, time);
+        }, (time || 100));
+      }
+    } function t_throttle(fn, threshhold, scope) { return function () { fn.apply(scope || this, arguments); }; } function t396_initialScale(t) { var e = document.getElementById("rec" + t); if (e) { var r = e.querySelector(".t396__artboard"); if (r) { var a, i = document.documentElement.clientWidth, l = [], d = r.getAttribute("data-artboard-screens"); if (d) { d = d.split(","); for (var o = 0; o < d.length; o++)l[o] = parseInt(d[o], 10) } else l = [320, 480, 640, 960, 1200]; for (o = 0; o < l.length; o++) { var n = l[o]; n <= i && (a = n) } var g = "edit" === window.allrecords.getAttribute("data-tilda-mode"), u = "center" === t396_getFieldValue(r, "valign", a, l), c = "grid" === t396_getFieldValue(r, "upscale", a, l), t = t396_getFieldValue(r, "height_vh", a, l), f = t396_getFieldValue(r, "height", a, l), e = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(" OPR/"); if (!g && u && !c && !t && f && !e) { for (var s = parseFloat((i / a).toFixed(3)), _ = [r, r.querySelector(".t396__carrier"), r.querySelector(".t396__filter")], o = 0; o < _.length; o++)_[o].style.height = parseInt(f, 10) * s + "px"; for (var h = r.querySelectorAll(".t396__elem"), o = 0; o < h.length; o++)h[o].style.zoom = s } } } } function t396_getFieldValue(t, e, r, a) { var i = a[a.length - 1], l = r === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + r); if (!l) for (var d = 0; d < a.length; d++) { var o = a[d]; if (!(o <= r) && (l = o === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + o))) break } return l }
+  </script>
   <script src="js/jquery-1.10.2.min.js" charset="utf-8" onerror="this.loaderr='y';"></script>
   <script src="js/tilda-scripts-3.0.min.js" charset="utf-8" defer="" onerror="this.loaderr='y';"></script>
   <script src="js/tilda-blocks-page37766235.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
@@ -92,7 +92,8 @@
       }); var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'G-HRPHNGST8C');</script>
+    })(window, document, 'script', 'dataLayer', 'G-HRPHNGST8C');
+  </script>
   <!-- End Google Tag Manager --><!-- Global Site Tag (gtag.js) - Google Analytics -->
   <script type="text/javascript" data-tilda-cookie-type="analytics">window.mainTracker = 'gtag';
     window.gtagTrackerID = 'G-HRPHNGST8C';
@@ -104,7 +105,8 @@
         gtag('js', new Date());
         gtag('config', i, { 'anonymize_ip': true });
       })(window, document, 'script', window.gtagTrackerID);
-    }, 2000);</script>
+    }, 2000);
+  </script>
   <script type="text/javascript">(function () {
       if ((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent)) === false && typeof (sessionStorage) != 'undefined' && sessionStorage.getItem('visited') !== 'y' && document.visibilityState) {
         var style = document.createElement('style');
@@ -146,7 +148,29 @@
   </style>
 </head>
 
-<body class="t-body" style="margin:0;"><!--allrecords-->
+<body class="t-body" style="margin:0;">
+
+  <audio id="bgMusic" loop>
+    <source src="relax.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    var bgMusic = document.getElementById("bgMusic");
+
+    function togglePlay() {
+      let playBtn = document.getElementById('playBtn')
+
+      if (bgMusic.paused) {
+        bgMusic.play();
+        playBtn.style.cssText = 'background-position: right;'
+      } else {
+        bgMusic.pause();
+        playBtn.style.cssText = 'background-position: left;'
+      }
+    }
+    document.body.click()
+  </script>
+
   <div id="allrecords" class="t-records t-records_animated t-records_visible" data-hook="blocks-collection-content-node"
     data-tilda-project-id="5279638" data-tilda-page-id="37766235" data-tilda-page-alias="invite/162"
     data-tilda-formskey="0cd8b15cb0883702c589cf5b25279638" data-tilda-lazy="yes" data-tilda-project-headcode="yes">
@@ -458,6 +482,7 @@
             data-field-widthunits-value="px" data-field-top-res-640-value="30">
             <div class="tn-atom" id="top_title" field="tn_text_1687430715228">Ծննդյան հրավիրատոմս</div>
           </div>
+
           <div class="t396__elem tn-elem tn-elem__6101546791687430641703 " data-elem-id="1687430641703"
             data-elem-type="image" data-field-top-value="11" data-field-left-value="1" data-field-width-value="63"
             data-field-axisy-value="bottom" data-field-axisx-value="center" data-field-container-value="grid"
@@ -469,6 +494,7 @@
             data-field-width-res-320-value="54" data-field-top-res-480-value="-14" data-field-left-res-480-value="0"
             data-field-width-res-480-value="44" data-field-top-res-640-value="-21" data-field-left-res-640-value="1"
             data-field-width-res-640-value="67">
+
             <a class="tn-atom" href="#rec609978289" style="top:-27px;position: relative;">
               <img class="tn-atom__img t-img"
                 data-original="https://static.tildacdn.com/tild3933-6665-4638-b337-623732613163/Asset_8new.svg" alt=""
@@ -491,6 +517,8 @@
           </div>
         </div>
       </div>
+      <div id="playBtn" onclick="togglePlay()"></div>
+
       <script>t_onFuncLoad('t396_initialScale', function () {
           t396_initialScale('610154679');
         });
@@ -498,7 +526,8 @@
           t_onFuncLoad('t396_init', function () {
             t396_init('610154679');
           });
-        });</script><!-- /T396 -->
+        });
+      </script>
     </div>
 
     <div id="rec610154680" class="r t-rec t-rec_pt_90 t-rec_pb_15" style="padding-top:90px;padding-bottom:15px; "
@@ -553,7 +582,6 @@
 
                 </div>
               </span>
-              <!--  -->
             </div>
           </div>
         </div>
@@ -733,17 +761,8 @@
       </style>
     </div>
   </div>
-  <script type="text/javascript" src="js/timer.js"></script>
-    <!-- audio  -->
-    <audio id="music">
-      <source src="relax.mp3" type="audio/mpeg">
-    </audio>
 
-    <script>
-      setTimeout(() => {
-        document.getElementById("music").play();
-      }, 100);
-    </script>
+  <script type="text/javascript" src="js/timer.js"></script>
 </body>
 
 </html>
