@@ -28,23 +28,21 @@ body {
 }
 
 #rec610154679 .tn-elem[data-elem-id="1687436199612"] .tn-atom {
+    background: transparent !important;
+}
+#topBG {
     background: linear-gradient(0.91turn, #282828 12%, rgba(1, 1, 1, 1) 98%);
 }
 
-#t396__filter0000 {
-    background: #141313 !important;
-}
-
 #img-text {
-
     display: none;
 }
 
 #date {
     font-size: 60px;
     font-weight: 300 !important;
-    filter: drop-shadow(3px 3px 3px #a9957d);
-    color: #c8a16d;
+    filter: drop-shadow(2px 2px 2px #a9957d) !important;
+    color: #c17a2e !important;
 }
 
 #Ymaps {
@@ -69,6 +67,22 @@ iframe {
 }
 
 #timer {
-    filter: drop-shadow(3px 3px 3px #a9957d);
-    color: #c8a16d;
+    filter: drop-shadow(2px 2px 2px #a9957d) !important;
+    color: #c17a2e !important;
+}
+
+.timer_text {
+    color: black;
+}
+
+#name {
+    display: none;
+    position: relative;
+    transform: translate(-27%, -70px);
+    font-size: 25px;
+    color: white;
+    min-width: 320px;
+}
+#name2{
+    color: #c17a2e !important;
 }
